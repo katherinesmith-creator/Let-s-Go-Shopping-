@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Let's Go Shopping!</title>
+<style>
+  body {
+    font-family: 'Courier New', Courier, monospace;
+    background: url('https://images.unsplash.com/photo-1578428862587-b2b1f7b2706b?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background-size: cover;
+    padding: 20px;
+    color: #333;
+  }
+  h1 { text-align: center; color: #fff; text-shadow: 1px 1px 3px #000; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;
+    background: rgba(255,255,255,0.9);
+  }
+  th, td {
+    border: 2px solid #4CAF50;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+    word-wrap: break-word;
+  }
+  th { background-color: #4CAF50; color: white; text-align: center; }
+  tr.row-label td { background-color: #dcedc8; font-weight: bold; text-align: center; }
+  input[type="text"], textarea, select {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    box-sizing: border-box;
+  }
+  textarea { height: 80px; }
+  .hidden { display: none; }
+  .submit-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .submit-btn:hover { background-color: #45a049; }
+  .float-item {
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+  }
+</style>
+</head>
+<body>
+
+<h1>Let's Go Shopping!</h1>
+
+<audio id="dingSound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3"></audio>
+
+<form id="ibForm" action="https://docs.google.com/forms/d/e/1FAIpQLSeX-ZzLU7_1Kclma_9wy3WWi6-gvMYiNNyw5iEH93poFph_Vw/formResponse" method="POST" target="_blank">
+
+  <!-- Student Info -->
+  <label>First Name: <input type="text" name="entry.1897474471" class="interactive" data-type="coin"></label><br><br>
+  <label>Last Name: <input type="text" name="entry.1694469616" class="interactive" data-type="coin"></label><br><br>
+  <label>Advisor Name: <input type="text" name="entry.358365545" class="interactive" data-type="coin"></label><br><br>
+
+  <table>
+    <!-- Main Ingredients -->
+    <tr class="row-label"><td colspan="3">Main Ingredients</td></tr>
+    <tr>
+      <td>
+        <strong>Are you more interested in the IB Diploma or IB Scholar Path?</strong><br><br>
+        <label><input type="radio" name="entry.516656453" value="IB Diploma" class="interactive" data-type="coin"> IB Diploma</label><br>
+        <label><input type="radio" name="entry.516656453" value="IB Scholar Path" class="interactive" data-type="coin"> IB Scholar Path</label>
+      </td>
+      <td>
+        <strong>Why did you choose this path?</strong><br>
+        <textarea name="entry.508213572" class="interactive" data-type="coin" placeholder="Explain your choice"></textarea>
+      </td>
+      <td>
+        <strong>What are three IB courses you are interested in taking?</strong><br><br>
+        <select name="entry.1617414208" class="interactive" data-type="coin">
+          <option value="">Select Course 1</option>
+          <option>Languages B - Spanish SL/HL</option>
+          <option>French ab initio SL</option>
+          <option>Language A - Spanish Language & Literature SL</option>
+          <option>Environmental Systems and Societies SL</option>
+          <option>Psychology SL/HL</option>
+          <option>World History SL</option>
+          <option>History of the Americas HL</option>
+          <option>Philosophy HL/SL</option>
+          <option>Business Management SL/HL</option>
+          <option>Physics SL/HL</option>
+          <option>Biology SL/HL</option>
+          <option>Chemistry SL</option>
+          <option>Mathematics Analysis & Approaches SL</option>
+          <option>Mathematics Applications & Interpretations SL</option>
+          <option>Visual Arts SL/HL</option>
+        </select>
+        <select name="entry.78410329" class="interactive" data-type="coin">
+          <option value="">Select Course 2</option>
+          <option>Languages B - Spanish SL/HL</option>
+          <option>French ab initio SL</option>
+          <option>Language A - Spanish Language & Literature SL</option>
+          <option>Environmental Systems and Societies SL</option>
+          <option>Psychology SL/HL</option>
+          <option>World History SL</option>
+          <option>History of the Americas HL</option>
+          <option>Philosophy HL/SL</option>
+          <option>Business Management SL/HL</option>
+          <option>Physics SL/HL</option>
+          <option>Biology SL/HL</option>
+          <option>Chemistry SL</option>
+          <option>Mathematics Analysis & Approaches SL</option>
+          <option>Mathematics Applications & Interpretations SL</option>
+          <option>Visual Arts SL/HL</option>
+        </select>
+        <select name="entry.2130279591" class="interactive" data-type="coin">
+          <option value="">Select Course 3</option>
+          <option>Languages B - Spanish SL/HL</option>
+          <option>French ab initio SL</option>
+          <option>Language A - Spanish Language & Literature SL</option>
+          <option>Environmental Systems and Societies SL</option>
+          <option>Psychology SL/HL</option>
+          <option>World History SL</option>
+          <option>History of the Americas HL</option>
+          <option>Philosophy HL/SL</option>
+          <option>Business Management SL/HL</option>
+          <option>Physics SL/HL</option>
+          <option>Biology SL/HL</option>
+          <option>Chemistry SL</option>
+          <option>Mathematics Analysis & Approaches SL</option>
+          <option>Mathematics Applications & Interpretations SL</option>
+          <option>Visual Arts SL/HL</option>
+        </select>
+      </td>
+    </tr>
+
+    <!-- Recipe -->
+    <tr class="row-label"><td colspan="3">Recipe (Choose a or b)</td></tr>
+    <tr>
+      <td>
+        <label><input type="radio" name="entry.1313923794" value="a) College Exploration" onclick="showCollege()" class="interactive" data-type="coin"> a) College Exploration</label><br>
+        <label><input type="radio" name="entry.1313923794" value="b) Career Exploration" onclick="showCareer()" class="interactive" data-type="coin"> b) Career Exploration</label>
+      </td>
+      <td>
+        <div id="collegeColumn" class="hidden">
+          College Name & Location:<br>
+          <input type="text" name="entry.1860721885" class="interactive" data-type="coin"><br><br>
+          What are the course requirements for admission?<br>
+          <textarea name="entry.2013493317" class="interactive" data-type="coin"></textarea><br><br>
+          What is the average GPA/test score for admitted students?<br>
+          <textarea name="entry.2028009932" class="interactive" data-type="coin"></textarea><br><br>
+          What is the full cost of attendance?<br>
+          <textarea name="entry.1103929564" class="interactive" data-type="coin"></textarea><br><br>
+          What is the IB credit for exam policy?<br>
+          <textarea name="entry.70073677" class="interactive" data-type="coin"></textarea>
+        </div>
+
+        <div id="careerColumn" class="hidden">
+          Career Title:<br>
+          <input type="text" name="entry.1537099885" class="interactive" data-type="coin"><br><br>
+          What level of education is required for this career?<br>
+          <textarea name="entry.383040147" class="interactive" data-type="coin"></textarea><br><br>
+          What is the average salary for this career?<br>
+          <textarea name="entry.1781052925" class="interactive" data-type="coin"></textarea><br><br>
+          What is the outlook for this career in NM?<br>
+          <textarea name="entry.824974521" class="interactive" data-type="coin"></textarea>
+        </div>
+      </td>
+      <td>
+        <div id="collegeColumn2" class="hidden">
+          What is one major of interest at this school?<br>
+          <textarea name="entry.1416704022" class="interactive" data-type="coin"></textarea><br><br>
+          What IB courses could help you prepare for your major selection?<br>
+          <textarea name="entry.937080373" class="interactive" data-type="coin"></textarea><br><br>
+          Why is this school a good fit for you?<br>
+          <textarea name="entry.495273712" class="interactive" data-type="coin"></textarea>
+        </div>
+
+        <div id="careerColumn2" class="hidden">
+          What skills are you building through the IB program that are linked to this career?<br>
+          <textarea name="entry.1205242606" class="interactive" data-type="coin"></textarea><br><br>
+          Why is this career a good fit for you?<br>
+          <textarea name="entry.659928026" class="interactive" data-type="coin"></textarea>
+        </div>
+      </td>
+    </tr>
+
+    <!-- Reflection -->
+    <tr class="row-label"><td colspan="3">Reflection</td></tr>
+    <tr>
+      <td>
+        <textarea name="entry.922816091" class="interactive" data-type="coin" placeholder="What do you think are your next steps in researching? Be specific."></textarea>
+      </td>
+      <td>
+        <textarea name="entry.361771552" class="interactive" data-type="coin" placeholder="What do you need help with?"></textarea>
+      </td>
+      <td>
+        <textarea name="entry.358365545" class="interactive" data-type="coin" placeholder="What is your #1 motivation for filling your cart?"></textarea>
+      </td>
+    </tr>
+  </table>
+
+  <button type="submit" class="submit-btn">TOTAL</button>
+</form>
+
+<script>
+const dingSound = document.getElementById('dingSound');
+
+function spawnFloatingCoin(event) {
+  const type = event.target.getAttribute('data-type');
+  if(type !== 'coin') return;
+
+  dingSound.currentTime = 0;
+  dingSound.play();
+
+  const rect = event.target.getBoundingClientRect();
+  const coin = document.createElement('div');
+  coin.classList.add('float-item');
+  coin.style.background = 'url(https://upload.wikimedia.org/wikipedia/commons/2/27/US_quarter_obverse_2006.png) no-repeat center center';
+  coin.style.backgroundSize = 'contain';
+  coin.style.left = (rect.left + window.scrollX + Math.random()*10) + 'px';
+  coin.style.top = (rect.top + window.scrollY) + 'px';
+  coin.style.width = '40px';
+  coin.style.height = '40px';
+  document.body.appendChild(coin);
+
+  coin.animate([
+    { transform: 'translateY(0) scale(1)', opacity: 1 },
+    { transform: 'translateY(-150px) scale(1.5)', opacity: 0 }
+  ], { duration: 1200, easing: 'ease-out' });
+
+  setTimeout(() => coin.remove(), 1200);
+}
+
+document.querySelectorAll('.interactive').forEach(el => {
+  if(el.tagName === 'TEXTAREA' || el.tagName === 'INPUT') {
+    el.addEventListener('blur', spawnFloatingCoin);
+  } else {
+    el.addEventListener('change', spawnFloatingCoin);
+  }
+});
+
+function showCollege() {
+  document.getElementById('collegeColumn').classList.remove('hidden');
+  document.getElementById('collegeColumn2').classList.remove('hidden');
+  document.getElementById('careerColumn').classList.add('hidden');
+  document.getElementById('careerColumn2').classList.add('hidden');
+}
+
+function showCareer() {
+  document.getElementById('careerColumn').classList.remove('hidden');
+  document.getElementById('careerColumn2').classList.remove('hidden');
+  document.getElementById('collegeColumn').classList.add('hidden');
+  document.getElementById('collegeColumn2').classList.add('hidden');
+}
+</script>
+
+</body>
+</html>
